@@ -4,11 +4,11 @@ from src.models import db
 import secrets
 
 
-
+#I got rid of my password
 # TODO: DB connection
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = \
-    'mysql://root:Yuma1491556!@localhost:3306/movie'
+    'mysql://root:Password@localhost:3306/movie'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
